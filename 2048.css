@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.header {
+  color: #00332c;
+  font-weight: 100;
+}
+
+.score {
+  color: #006658;
+}
+
+hr {
+  width: 50vw;
+  height: 3px;
+  background: linear-gradient(90deg, #000f0d, #00ffdd, #000f0d);
+  border: none;
+}
+
+#board {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border: 5px solid #002722;
+  background-color: #b8fff6;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.tile {
+  width: 90px;
+  height: 90px;
+  border: 5px solid #002722;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.x2 {
+  background-color: #00ffdd;
+  color: #001a16;
+}
+
+.x4 {
+  background-color: #00ccb1;
+  color: #00332c;
+}
+
+.x8 {
+  background-color: #00b39b;
+  color: #00332c;
+}
+
+.x16 {
+  background-color: #009985;
+  color: #66ffeb;
+}
+
+.x32 {
+  background-color: #00806f;
+  color: #80ffee;
+}
+
+.x64 {
+  background-color: #006658;
+  color: #99fff1;
+}
+
+.x128 {
+  background-color: #004d42;
+  color: #b3fff5;
+}
+
+.x256 {
+  background-color: #00332c;
+  color: #ccfff8;
+}
+
+.x512 {
+  background-color: #00332c;
+  color: #ccfff8;
+}
+
+.x1024 {
+  background-color: #001a16;
+  color: #e5fffc;
+}
+
+.x2048 {
+  background-color: #000f0d;
+  color: #f5fffe;
+}
+
+.x4096 {
+  background-color: #000f0d;
+  color: #f5fffe;
+}
+
+.x8192 {
+  background-color: #000f0d;
+  color: #f5fffe;
+}
+
+.failure {
+  width: 600px;
+  color: rgb(128, 1, 39);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 213, 0),
+    #00ffdd,
+    #00ffdd,
+    rgba(0, 255, 213, 0)
+  );
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* transform-origin: center; */
+  transform: translate(-50%, -50%) rotate(-10deg);
+
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.win {
+  width: 600px;
+  color: rgb(0, 17, 53);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 213, 0),
+    #00ffdd,
+    #00ffdd,
+    rgba(0, 255, 213, 0)
+  );
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+
+  font-size: 55px;
+  font-weight: bold;
+}
